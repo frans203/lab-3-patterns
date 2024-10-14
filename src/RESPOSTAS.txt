@@ -1,0 +1,33 @@
+Vantagens de usar o Composite pattern
+Aluno: Francisco Santana de Sousa Júnior
+
+
+- Permite tratar objetos unicos e composições de objetos da mesma forma.
+Como podemos ver no código, com components compostos e single components extendem da mesma classe,
+todos usam o método draw, mas components que estão no meio da arvore de components apenas delegam a função de
+draw para nós abaixo, até chegar nos leaf nodes, onde a executação é feita de fato
+
+- Facilita a Criação de estruturas hierárquicas
+O Composite Pattern é ideal para modelar estruturas que têm uma relação de tree,
+como árvores genealógicas, diretórios de arquivos ou estruturas de documentos.
+Isso permite representar elementos de uma maneira hierárquica e trabalhar facilmente
+com eles ao representa-los como uma tree.
+
+- Reutilização de código
+Ao usar uma interface ou classe base comum para folhas e composites, o código cliente se torna mais simples e extensível,
+já que pode interagir com a hierarquia sem precisar de verificações ou manipulações
+especiais para cada tipo de objeto.
+Além disso, quando você adiciona novos tipos de componentes (folhas ou composites),
+isso pode ser feito sem grandes alterações no código existente.
+
+- Flexibilidade
+O Composite Pattern é flexível e pode ser ajustado facilmente.
+Você pode adicionar ou remover componentes (folhas ou outros composites) em tempo de execução,
+permitindo a criação de estruturas dinâmicas e maleáveis. Isso é especialmente útil em casos onde a
+estrutura da aplicação pode mudar frequentemente, como em editores gráficos, interfaces de usuário
+ou estruturas de dados.
+
+- Reduz a Complexidade
+Sem o Composite Pattern, o cliente teria que lidar com verificações para determinar se está lidando com
+um objeto simples ou um composto, o que tornaria o código mais complexo e difícil de manter.
+Com o Composite Pattern, essa complexidade é abstraída.
